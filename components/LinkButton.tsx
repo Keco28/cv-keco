@@ -7,7 +7,7 @@ interface LinkButtonProps extends IconBaseProps {
     }
 
 const LinkButton = ({icon, text}: LinkButtonProps) => {
-  return <button className='m-2 flex justify-center place-items-center w-[48px] h-[48px] bg-yellow-400 rounded-full debug' onClick={()=>window.open(text)}> 
+  return <button className='m-2 flex justify-center place-items-center w-[48px] h-[48px] bg-[#2D8F1D] rounded-full ' onClick={()=>window.open(text)}> 
                 {icon({size: 28})}
         </button>
 }
