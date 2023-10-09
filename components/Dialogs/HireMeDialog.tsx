@@ -26,7 +26,7 @@ const HireMeDialog = ({open, setHireMeDialogOpen}: HireMeDialogProps) => {
             </DialogTitle>
             <DialogContent>
                 <DialogContentText style={{fontWeight: 900, fontSize: 16}}>
-                    Right now I'm very busy with other projects, but thanks for checking out my profile. I hope we can work together in the future.
+                    Right now I&apos;m very busy with other projects, but thanks for checking out my profile. I hope we can work together in the future.
                 </DialogContentText>
                 <img src="/media/Mi-Loco.png" alt="Hire Me Image" />
             </DialogContent>
