@@ -106,7 +106,7 @@ const Home = () => {
             </button>
           </div>
           <div>
-            <img className=" h-[459px] object-cover" src="/media/keco2.png" alt="Imagen personal"/>
+            <img className=" h-[459px] object-cover" src="/media/keco2.png" alt="Imagen personal" onDoubleClick={() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')}/>
           </div>
         </section>
         <section className="flex flex-col gap-10 "> 
@@ -135,7 +135,7 @@ const Home = () => {
             <PortfolioItem link= "https://github.com/a-zambrano1/app_WebTorneos" icon="/media/Rap-Rumble.png" title="Rap Rumble" description="Rap Rumble is a web-mobile app used for managing rap battle tournaments. It offers event organizers an array of tools for managing and promoting tournaments, while participants can register, showcase their skills, and engage in battles with real-time scoring and feedback. The app also boasts a thriving rap community, educational resources, and live audience interaction, making it a one-stop platform for rap enthusiasts, artists, and fans to connect, compete, and celebrate the art of rap."/>
             <PortfolioItem link= "https://docs.google.com/document/d/1gG0SOt9C2NHEoWbRlHrcOKyDEvqv6CwfMD9CFmGGEvg" icon="/media/Nashe-Bike.png" title="Nashe Bike" description="Nashe Bike is a straightforward 2D bike racing game that keeps things simple and fun. It offers one map and a multiplayer mode, making it accessible for players of all levels. Race against your friends in real-time. Easy controls ensure a seamless experience, allowing you to dive right into the action and enjoy the thrill of 2D bike racing with ease."/>
             <PortfolioItem link= "https://docs.google.com/document/d/1H6YxCxDxUjvdMthxQgxFQihOpJtIGZTra3dz4CcoO0w" icon="/media/Free-Rating.png" title="Free Rating" description="Free Rating is a mobile app designed for rap battle enthusiasts. It offers three distinct formats for voting on battles: 4x4, easy mode, and hard mode. Additionally, the app allows users to keep a record of these battles, creating a personal archive of memorable showdowns. Free Rating fosters a sense of community by enabling discussions and connections among rap fans, making it a go-to platform for anyone passionate about rap battles and the art of lyrical competition." />
-            <PortfolioItem icon="/media/Tienditas-Udea.png" title="Tienditas UdeA" description="Tienditas UdeA is a mobile app designed to simplify navigation within the University of Antioquia campus. It helps users easily locate stores, cafeterias, bookshops, and more. The app provides a detailed map, store information like working hours and products. It's a handy tool for students, faculty, and visitors to make the most of their time on campus."/>
+            <PortfolioItem icon="/media/Tienditas-Udea.png" title="Tienditas UdeA" description="Tienditas UdeA is a mobile app designed to simplify navigation within the University of Antioquia&apos;s campus. It helps users easily locate stores, cafeterias, bookshops, and more. The app provides a detailed map, store information like working hours and products. It&apos;s a handy tool for students, faculty, and visitors to make the most of their time on campus."/>
           </div>
         </section>
         <footer className="flex justify-center bg-white">

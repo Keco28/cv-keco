@@ -19,10 +19,10 @@ interface HireMeDialogProps {
 
 const HireMeDialog = ({open, setHireMeDialogOpen}: HireMeDialogProps) => {
     return(
-        <Dialog TransitionComponent={Transition} open={open} onClickCapture={()=>{setHireMeDialogOpen(false)}}>
+        <Dialog TransitionComponent={Transition} open={open} onClose={(event, reason) => {if (reason == 'backdropClick') {setHireMeDialogOpen(false)}}}>
             <DialogTitle className="flex justify-between">
                 <span style={{color: "#2D8F1D", fontWeight: 800, fontSize: 24}}>Hi, Thanks for wanting to Hire Me!</span>
-                <button>X</button>
+                <button onClickCapture={()=>{setHireMeDialogOpen(false)}}>X</button>
             </DialogTitle>
             <DialogContent>
                 <DialogContentText style={{fontWeight: 900, fontSize: 16}}>

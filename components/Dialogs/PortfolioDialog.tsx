@@ -22,13 +22,16 @@ interface PortfolioDialogProps {
     }
 
 const PortfolioDialog = ({open, setPortfolioDialogOpen, link, image, description}: PortfolioDialogProps) => {
+
+  const ExtraLink = "ExtraLink"
+
     return(
-        <Dialog className="flex flex-col place-items-center" TransitionComponent={Transition} open={open} onClickCapture={()=>{setPortfolioDialogOpen(false)}}>
+        <Dialog className="flex flex-col place-items-center" TransitionComponent={Transition} open={open} onClose={(event, reason) => {if (reason == 'backdropClick') {setPortfolioDialogOpen(false)}}}>
             
             <DialogContent className="flex flex-col place-items-center gap-5">
                 <img src={image} alt="Portfolio Item" />
                 <DialogContentText style={{fontSize: 18, textAlign: "center"}}>{description}</DialogContentText>
-                <a className="hover:underline" style={{color: "#2D8F1D"}} onClick={()=>window.open(link)}>{link}</a>
+                {link ? <a className="hover:underline" style={{fontSize: 18, fontWeight: 600, color: "#2D8F1D", cursor: "pointer" }} onClick={() => window.open(link)}>Extra Link</a> : null}
             </DialogContent>
         </Dialog>    )
 }
